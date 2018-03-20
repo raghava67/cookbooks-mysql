@@ -7,3 +7,9 @@ mysql_database 'illuminate_su' do
   )
   action :create
 end
+
+mysql_database_user 'root' do
+  connection mysql_connection_info
+  password   'rndhi892sdw45'
+  action     :create
+end
